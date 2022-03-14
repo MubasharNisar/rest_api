@@ -27,7 +27,7 @@ def upload_predict():
         if image:
             # CLI = cli.Prediction(image_file,paper_size).pred_result()
             result = load_model(image)
-            pred = 'Predection: '+str(result)
+            pred = 'Predction: '+str(result)
             return render_template("index.html", pred='{}'.format(pred))
     return render_template("index.html", prediction=0)
 
